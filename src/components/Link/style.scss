@@ -1,0 +1,39 @@
+.link-wrapper {
+    font-size: 14px;
+    line-height: 18px;
+    color: #4A3C73;
+    font-weight: 300;
+    & + & {
+        margin-top: 32px;
+    }
+    @media only screen and (min-width: 820px) {
+        font-size: 18px;
+        line-height: 23px;
+        & + & {
+            margin-top: 27px;
+        }
+    }
+}
+.link {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #744CED;
+    font-weight: 400;
+    line-height: 19px;
+    &-description {
+        &--laptop {
+            display: none;
+        }
+    }
+    @media only screen and (min-width: 768px) {
+        line-height: 24px;
+    }
+    @media only screen and (min-width: 990px) {
+        &-description {
+            display: none;
+            &--laptop {
+                display: inline-block;
+            }
+        }
+    }
+}
